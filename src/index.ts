@@ -19,7 +19,7 @@ app.get("/", async (req, res) => {
 });
 
 app.post("/", async (req, res) => {
-  res.send(`Hello, World! THIS IS A POST`);
+  res.send(req.body.toString());
 });
 
 app.listen(port, () => {
